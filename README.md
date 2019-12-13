@@ -8,4 +8,4 @@ A collection of wild things I stumbled across that made me go 🤩 or 🤯
 What most people are expecting when they see super(X) is what Python gives you if you do super(X, X).
 
 ### [What's a pythonic replacement for switch/case in Python](https://stackoverflow.com/questions/60208/replacements-for-switch-statement-in-python)
-From simple dictionary with `.get()` method to really creative ideas like a context manager
+From simple dictionary with `.get()` method to really creative ideas like a context manager. [Here's one more method](http://code.activestate.com/recipes/410692/)
