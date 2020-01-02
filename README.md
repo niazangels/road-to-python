@@ -9,3 +9,7 @@ What most people are expecting when they see `super(X)` is what Python gives you
 
 ### [What's a pythonic replacement for switch/case in Python](https://stackoverflow.com/questions/60208/replacements-for-switch-statement-in-python)
 From simple dictionary with `.get()` method to really creative ideas like a context manager. [Here's one more method](http://code.activestate.com/recipes/410692/)
+
+
+### Should I feel pressured to use async/await?
+[The creator of Flask doesn't](https://lucumr.pocoo.org/2020/1/1/async-pressure/) due to [backpressure](https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7)
