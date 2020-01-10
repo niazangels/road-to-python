@@ -13,3 +13,17 @@ From simple dictionary with `.get()` method to really creative ideas like a cont
 
 ### [Should I feel pressured to use async/await?](https://lucumr.pocoo.org/2020/1/1/async-pressure/)
 The creator of Flask doesn't due to [backpressure](https://medium.com/@jayphelps/backpressure-explained-the-flow-of-data-through-software-2350b3e77ce7)
+
+### [How to unit-test decorated functions?](https://stackoverflow.com/questions/30327518/how-to-unit-test-decorated-functions)
+Split your decoration into two
+```python
+def to_string(value):
+    return str(value)
+
+def stringify(func):
+    @wraps(func)
+    def wrapper(*args):
+        return to_string(func(*args))
+
+    return wrapper
+```
