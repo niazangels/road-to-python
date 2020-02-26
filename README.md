@@ -27,3 +27,8 @@ def stringify(func):
 
     return wrapper
 ```
+
+### [How can I undo `git reset --hard HEAD~1`?](https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1)
+```
+git reflog
+git reset --hard <sha1 of desired commit>```
