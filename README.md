@@ -37,11 +37,11 @@ git reset --hard <sha1 of desired commit>
 ### [Why the heck is `np.nan != np.nan`?](https://towardsdatascience.com/navigating-the-hell-of-nans-in-python-71b12558895b)
 All NaNs are not equal. Some are butter NaNs.
 ```
->>> np.nan in [np.nan]
-True
-
 >>> np.nan == np.nan
 False
+
+>>> np.nan is np.nan
+True
 
 >>> np.nan in [np.nan]
 True
